@@ -63,17 +63,15 @@
 				<div class="clearfix"></div>
 				<div data-role="content">
 					<ul data-role="listview" style="margin:0px"> 
-						<li> <a onclick="noticias('1')" data-transition='flip' href="#todas"  >¿Qué es Lidera?</a></li>
-						<li> <a onclick="noticias('7')"  data-transition='flip' href="#todas"> ¿Donde se realiza?</a></li>
-						<li> <a onclick="noticias('2')" data-transition='flip' href="#todas"> Cronograma</a></li>
-						<li> <a onclick="noticias('3')" data-transition='flip' href="#todas"  > Premios académicos</a></li>
-						<li> <a onclick="noticias('4')" data-transition='flip' href="#todas"  > Xilum</a></li>
-						<li> <a onclick="noticias('5')" data-transition='flip' href="#todas"  > Talleres</a></li>
-						<li> <a onclick="noticias('5')" data-transition='flip' href="#todas"  > Conferencias</a></li>
-						<li> <a onclick="noticias('6')" data-transition='flip' href="#todas"> Micropasantías</a></li>
-						<li> <a onclick="noticias('7')"  data-transition='flip' href="#todas"> Ayudanos a ayudar</a></li>
-		
-						<li> <a href="#contacto"  data-transition='flip' > Contacto</a></li>
+						<li> <a  data-transition='flip' href="#lidera"><span class="icon-lidera"></span>¿Qué es LIDERA?</a></li>
+						<li> <a href="#ubicacion"  data-transition='flip'><span class="icon-ubicacion"></span> ¿Dónde se realiza?</a></li>
+						<li> <a href="#cronograma" data-transition='flip'><span class="icon-cronograma"></span> Cronograma</a></li>
+						<li> <a href="#xilum" data-transition='flip'   ><span class="icon-xilum"></span> XILUM</a></li>
+						<li> <a href="#talleres" data-transition='flip'   > <span class="icon-talleres"></span>Talleres</a></li>
+						<li> <a href="#conferencias" data-transition='flip'   > <span class="icon-conferencias"></span>Conferencias</a></li>
+						<li> <a href="#micro" data-transition='flip' ><span class="icon-micro"></span> Micropasantías</a></li>
+						<li> <a href="#ayudanos"  data-transition='flip' ><span class="icon-ayudanos"></span> Ayudanos a ayudar</a></li>
+						<li> <a href="#contacto"  data-transition='flip' ><span class="icon-contacto"></span> Contacto</a></li>
 					</ul>
 						
 				</div>
@@ -126,39 +124,39 @@
 				<div class="opciones row">
 					
 					<div class="col-xs-4">
-						<a href="#tiempopopular" data-transition='flip'>
+						<a href="#cronograma" data-transition='flip'>
 							<img src="img/cronograma.png" class="img-responsive">
 							<p>Cronograma</p>
 						</a>
 					</div>
 					<div class="col-xs-4">
-						<a href="http://www.lidera.com.ar/actividades2017/talleres.html" onclick="cargarview()" target="_system">
+						<a href="#talleres"  data-transition='flip'>
 							<img src="img/talleres.png" class="img-responsive">
 							<p>Talleres</p>
 						</a>
 					</div>
 					<div class="col-xs-4">
-						<a href="#tiempopopular" data-transition='flip'>
+						<a href="#conferencias" data-transition='flip'>
 							<img src="img/conferencias.png" class="img-responsive">
 							<p>Conferencias</p>
 						</a>
 					</div>
 					<div class="clearfix"></div>
 					<div class="col-xs-4">
-						<a href="#tiempopopular" data-transition='flip'>
+						<a href="#ayudanos" data-transition='flip'>
 							<img src="img/ayudanos.png" class="img-responsive">
 							<p>Ayudanos a Ayudar</p>
 						</a>
 					</div>
 					<div class="col-xs-4">
-						<a href="#tiempopopular" data-transition='flip'>
+						<a href="#xilum" data-transition='flip'>
 							<img src="img/xilum.png" class="img-responsive">
-							<p>Xilum</p>
+							<p>XILUM</p>
 							
 						</a>
 					</div>
 					<div class="col-xs-4">
-						<a href="#tiempopopular" data-transition='flip'>
+						<a href="#micro" data-transition='flip'>
 							<img src="img/micropasantia.png" class="img-responsive">
 							<p>Micro pasantias</p>
 						</a>
@@ -196,8 +194,498 @@
 				
 		</div>
 		
-		
+		<!------------Pagina Cronograma------- -->
+		<div data-role="page" id="cronograma" data-title="Cronograma">
+			<div  data-role="panel" data-display="overlay" data-position="left" id="panel2" style="    width: 100%;">
+				<div data-role="header" class="ui-b" data-theme="b">
+				<div class="col-xs-2">
+					<a class="ui-btn-left" href="#demo-links" data-rel="close" data-icon="delete" data-role="button" data-iconpos="notext"></a>
+				</div>
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+					
+				</div>
+				<div class="clearfix"></div>
+				<div data-role="content">
+					<ul data-role="listview" style="margin:0px"> 
+						<li> <a  data-transition='flip' href="#lidera"><span class="icon-lidera"></span>¿Qué es LIDERA?</a></li>
+						<li> <a href="#ubicacion"  data-transition='flip'><span class="icon-ubicacion"></span> ¿Dónde se realiza?</a></li>
+						<li> <a href="#cronograma" data-transition='flip'><span class="icon-cronograma"></span> Cronograma</a></li>
+						<li> <a href="#xilum" data-transition='flip'   ><span class="icon-xilum"></span> XILUM</a></li>
+						<li> <a href="#talleres" data-transition='flip'   > <span class="icon-talleres"></span>Talleres</a></li>
+						<li> <a href="#conferencias" data-transition='flip'   > <span class="icon-conferencias"></span>Conferencias</a></li>
+						<li> <a href="#micro" data-transition='flip' ><span class="icon-micro"></span> Micropasantías</a></li>
+						<li> <a href="#ayudanos"  data-transition='flip' ><span class="icon-ayudanos"></span> Ayudanos a ayudar</a></li>
+						<li> <a href="#contacto"  data-transition='flip' ><span class="icon-contacto"></span> Contacto</a></li>
+					</ul>
+						
+				</div>
+			</div>
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				<div class="col-xs-2">
+					<a href="#panel2" id="butonham" data-role="button"  data-theme="b"><span class="icon-menu"></span></a>
+				</div>
+				<div class="col-xs-8 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#principal" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<img src="img/evento/cronograma.png" class="img-responsive">
+				
+				<div class="clearfix"></div>
+				
+				
+					
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>
+				
+		</div>
+		<!------------Pagina talleres------- -->
+		<div data-role="page" id="talleres" class="evento" data-title="Talleres">
+			<div  data-role="panel" data-display="overlay" data-position="left" id="panel3" style="    width: 100%;">
+				<div data-role="header" class="ui-b" data-theme="b">
+				<div class="col-xs-2">
+					<a class="ui-btn-left" href="#demo-links" data-rel="close" data-icon="delete" data-role="button" data-iconpos="notext"></a>
+				</div>
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+					
+				</div>
+				<div class="clearfix"></div>
+				<div data-role="content">
+					<ul data-role="listview" style="margin:0px"> 
+						<li> <a  data-transition='flip' href="#lidera"><span class="icon-lidera"></span>¿Qué es LIDERA?</a></li>
+						<li> <a href="#ubicacion"  data-transition='flip'><span class="icon-ubicacion"></span> ¿Dónde se realiza?</a></li>
+						<li> <a href="#cronograma" data-transition='flip'><span class="icon-cronograma"></span> Cronograma</a></li>
+						<li> <a href="#xilum" data-transition='flip'   ><span class="icon-xilum"></span> XILUM</a></li>
+						<li> <a href="#talleres" data-transition='flip'   > <span class="icon-talleres"></span>Talleres</a></li>
+						<li> <a href="#conferencias" data-transition='flip'   > <span class="icon-conferencias"></span>Conferencias</a></li>
+						<li> <a href="#micro" data-transition='flip' ><span class="icon-micro"></span> Micropasantías</a></li>
+						<li> <a href="#ayudanos"  data-transition='flip' ><span class="icon-ayudanos"></span> Ayudanos a ayudar</a></li>
+						<li> <a href="#contacto"  data-transition='flip' ><span class="icon-contacto"></span> Contacto</a></li>
+					</ul>
+						
+				</div>
+				
+			</div><!--fin panel-->
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				<div class="col-xs-2">
+					<a href="#panel3" id="butonham" data-role="button"  data-theme="b"><span class="icon-menu"></span></a>
+				</div>
+				<div class="col-xs-8 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#principal" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<!--<a href="#talleres" class="scroll"><span class="icon-up"></span></a>-->
+				<h3>Talleres</h3>
+				<img src="img/evento/talleres.jpg" class="img-responsive">
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#taller1">Economía amigable</a></li>
+					<li><a href="#taller2">Investigación & Desarrollo y Producción </a></li>
+					<li><a href="#taller3">Marketing y Publicidad</a></li>
+					<li><a href="#taller4">Interpretación de noticias</a></li>
+					<li><a href="#taller5">Trabajo en equipo</a></li>
+					
+				</ul>
 	
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>
+				
+		</div>
+		<!------------Pagina Taller 1------- -->
+		<div data-role="page" id="taller1" class="evento" data-title="Talleres">
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#talleres" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<h3>ECONOMIA AMIGABLE</h3>
+				<p>La primera decisión que deberán tomar como gerentes de su empresa será establecer el precio de sus productos. Con el precio comparamos qué es lo que el consumidor desea (la demanda) con nuestros planes de producción (la oferta); es el factor más importante para determinar cuánta ganancia pueden obtener. Ustedes desearán vender la mayor cantidad posible al precio más alto posible y con el mínimo costo posible. La ganancia que su empresa coseche dependerá tanto de las decisiones suyas como CEOs como de los precios y estrategias del resto de las empresas.	</p>
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>	
+		</div>
+			<!------------Pagina Taller2------- -->
+		<div data-role="page" id="taller2" class="evento" data-title="Talleres">
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+					<a href="#talleres" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<h3>Investigación & Desarrollo y Producción</h3>
+				<p>	Los recursos son destinados a estudios de mercado, análisis de los consumidores para conocer los gustos, aspiraciones y deseos de las personas que se encuentran en el target de nuestra empresa y nuestros productos. Como CEOs, deberán manejar la variable I&D con mucha precisión y siempre en el marco de un plan de acción que sea compatible con las decisiones que tomaron.	</p>
+				<p>	La decisión de optar por un nivel de producción es muy importante en la vida real y por eso también en la simulación CEO-Virtual; a menor producción, el costo unitario es más alto. A medida que el total de la producción aumenta, el costo unitario va descendiendo hasta alcanzar su mínimo óptimo, que se encuentra cuando se utiliza el 80% de la capacidad productiva.	</p>
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>	
+		</div>
+		<!------------Pagina Taller 3------- -->
+		<div data-role="page" id="taller3" class="evento" data-title="Talleres">
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+					<a href="#talleres" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<h3>Marketing y Publicidad</h3>
+				<p>¿Ganaremos más dinero por el efecto positivo del marketing, o saldremos perdiendo por el incremento de los costos totales en nuestra producción?</p>
+				<p>	CEO-Virtual reproduce este fenómeno generando órdenes de compra en función del dinero que gastó en campañas publicitarias el conjunto de las empresas competidoras como un todo.</p>
+				<p>	Los recursos que gasten en Marketing deben estar relacionados con las decisiones de precio y producción de la empresa.</p>
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>	
+		</div>
+		<!------------Pagina Taller 4------ -->
+		<div data-role="page" id="taller4" class="evento" data-title="Talleres">
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#talleres" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<h3>Interpretación de noticias</h3>
+				<p>	Los CEOs cuentan con mucha información disponible para ser precisos en la conducción de la compañía y desplazarse al compás del mercado.</p>
+				<p>	Una fuente clave de esa información es la que proviene del periódico económico "El Virtual", en else anticipan los movimientos del Banco Central y el Gobierno Nacional sobre las variables claves de la economía que afectan al mercado y a nuestra empresa.</p>
+				<p>	Siempre es bueno estar informados, porque eso nos permitirá al menos identificar cómo se está configurando el marco económico donde se mueve nuestra empresa.</p>
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>	
+		</div>
+		<!------------Pagina Taller 5------- -->
+		<div data-role="page" id="taller5" class="evento" data-title="Talleres">
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#talleres" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<h3>Trabajo en equipo</h3>
+				<p>	Cuando se trabaja en equipo, los esfuerzos de los miembros se potencian, disminuyendo el tiempo de acción y aumentando la eficacia de los resultados, sumando talentos individuales para que exploten positivamente a favor de la misión del grupo. Esta forma de trabajar, en la que todos los participantes son responsables de las metas.“Dos cabezas piensan mejor que una”.</p>
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>	
+		</div>
+		
+		<!------------Pagina Conferencias------- -->
+		<div data-role="page" id="conferencias" class="evento" data-title="Conferencia">
+			<div  data-role="panel" data-display="overlay" data-position="left" id="panel3" style="    width: 100%;">
+				<div data-role="header" class="ui-b" data-theme="b">
+				<div class="col-xs-2">
+					<a class="ui-btn-left" href="#demo-links" data-rel="close" data-icon="delete" data-role="button" data-iconpos="notext"></a>
+				</div>
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+					
+				</div>
+				<div class="clearfix"></div>
+				<div data-role="content">
+					<ul data-role="listview" style="margin:0px"> 
+						<li> <a  data-transition='flip' href="#lidera"><span class="icon-lidera"></span>¿Qué es LIDERA?</a></li>
+						<li> <a href="#ubicacion"  data-transition='flip'><span class="icon-ubicacion"></span> ¿Dónde se realiza?</a></li>
+						<li> <a href="#cronograma" data-transition='flip'><span class="icon-cronograma"></span> Cronograma</a></li>
+						<li> <a href="#xilum" data-transition='flip'   ><span class="icon-xilum"></span> XILUM</a></li>
+						<li> <a href="#talleres" data-transition='flip'   > <span class="icon-talleres"></span>Talleres</a></li>
+						<li> <a href="#conferencias" data-transition='flip'   > <span class="icon-conferencias"></span>Conferencias</a></li>
+						<li> <a href="#micro" data-transition='flip' ><span class="icon-micro"></span> Micropasantías</a></li>
+						<li> <a href="#ayudanos"  data-transition='flip' ><span class="icon-ayudanos"></span> Ayudanos a ayudar</a></li>
+						<li> <a href="#contacto"  data-transition='flip' ><span class="icon-contacto"></span> Contacto</a></li>
+					</ul>
+						
+				</div>
+				
+			</div>
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				<div class="col-xs-2">
+					<a href="#panel3" id="butonham" data-role="button"  data-theme="b"><span class="icon-menu"></span></a>
+				</div>
+				<div class="col-xs-8 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#principal" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				
+				<h3>Conferencias</h3>
+				<div class="col-xs-6 box-conferencia">
+						<a href="#conferencia1"  data-transition='flip'>
+							<img src="img/conferencia/1.png" class="img-responsive">
+							<p>Conferencia Magistral</p>
+						
+						</a>
+					</div>
+					<div class="col-xs-6  box-conferencia">
+						<a href="#conferencia2" data-transition='flip'>
+							<img src="img/conferencia/2.png" class="img-responsive">
+							<p>1º Pilar Académico</p>
+						</a>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-xs-6  box-conferencia">
+						<a href="#conferencia3" data-transition='flip'>
+							<img src="img/conferencia/3.png" class="img-responsive">
+							<p>2º Pilar Académico</p>
+						</a>
+					</div>
+					<div class="col-xs-6  box-conferencia">
+						<a href="#conferencia4" data-transition='flip'>
+							<img src="img/conferencia/4.png" class="img-responsive">
+							<p>3º Pilar Académico</p>
+						</a>
+					</div>
+				
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>
+				
+		</div>
+		<!------------Pagina Conferencia 1------- -->
+		<div data-role="page" id="conferencia1" class="evento" data-title="">
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#conferencias" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<h3>Charla Profesional <br>Master en Remología</h3>
+				<p>Si bien el capacitarnos en un área específica o tomar la decisión de emprender parece no ser suficiente a la hora de tener éxito en lo que deseamos. Es por eso que la motivación, orientación y acompañamiento en este camino que decidamos recorrer es vital para concretar nuestros sueños. Es por esto que el estar enamorado y tener en claro tus objetivos son actores claros para el pensamiento Positivo para recorrer y ser el actor principal de tu proyecto de vida.</p>
+				<p>Disertante : Lic. AlvaroDomenech
+					Licenciado  CoachingPractitioner  PNL TheSociety of Neuro-linguisticProgramming (California, EE.UU)
+					Técnico. En comunicación Social  UnLar
+					Técnico en Comercialización y Marketing estratégico  Training Center
+					Coach Ontológico AxxonTraininng
+					Coaching Ontológico Instituto DEVENIR
+					Director Red de Institutos I.C.E.L.
+					Gerente Comercial Lira Records.
+					Director Consultora ASER</p>
+ 
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>	
+		</div>
+		<!------------Pagina Conferencia 2------- -->
+		<div data-role="page" id="conferencia2" class="evento" data-title="">
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#conferencias" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<a href="#conferencia2" class="scroll"><span class="icon-up"></span></a>
+				<h3>1º Pilar Académico: <br>Para crear se necesita fantasía</h3>
+				<p>La economía azul de Gunter Pauli.</p>
+				<p>En tiempos de zozobra económica, cuando los expertos parecen incapaces de ofrecer otras soluciones que no sean parches o recetas con los mismos modelos, apenas disimulados, que han causado la crisis global, la propuesta de Gunter Pauli desprende el aroma de lo revolucionario y lo posible a la vez.</p>
+				<p>La economía azul parte de una premisa sencilla: servirse del conocimiento acumulado durante millones de años por la naturaleza para alcanzar cada vez mayores niveles de eficacia, respetando el medio y creando riqueza, y traducir esa lógica del ecosistema al mundo empresarial.</p>
+				<p>Pauli sugiere estimulantes posibilidades: desde aplicar el diseño bicolor de la piel de las cebras o la estructura de los termiteros a la arquitectura bioclimática, a teléfonos móviles que se recargan sin batería gracias a la diferencia de temperatura entre el aparato y el cuerpo humano, pasando por la reutilización de los desechos mineros o agrícolas. Presentado como informe para el Club de Roma, La Economía Azul expone cien iniciativas empresariales innovadoras que pueden generar cien millones de empleos en los próximos diez años: innovaciones reales, científicamente contrastadas y económicamente viables, algunas llevadas ya a la práctica, que señalan una vía alternativa hacia un mundo mejor.</p>
+				<p>Disertante: Lic.Mariano Fernández: Estudios: Posgrado: Esp. en Evaluación de la Contaminación y su Riesgo Toxicológico - UNSAM – Grado: Licenciado en Gestión Ambiental - Universidad CAECE. Experiencia relevante: Club de Roma Puesto: Miembro del equipo local de Economía Azul. Honorable Cámara de Diputados de la Nación Argentina: Puesto: Analista de Planificación y Control de Gestión. Instituto Tecnológico de Buenos Aires: Puesto: Ayudante de cátedra de Gestión Ambiental de la carrera de Ingeniería Industrial. Movimiento Agua y Juventud: Participación en el desarrollo y en la coordinación de tareas en el Centro de Sustentabilidad para Gobiernos Locales (CeSus). Iscot Services S.A. Puesto: Responsable ambiental del servicio de gestión de residuos en planta Ford Pacheco. Café el Continente Período: Puesto: Responsable de planta. Universidad CAECE: Puestos: JTP y Docente titular de las materias Informática Aplicada I y II. TÜV Rheinland Argentina: Puesto: Coordinador administrativo local para proyectos MDL. Agencia de Protección Ambiental (GCABA) – DG de Evaluación Técnica: Puesto: Técnico de Impacto Ambiental. </p>
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>	
+		</div>
+		<!------------Pagina Conferencia 3------- -->
+		<div data-role="page" id="conferencia3" class="evento" data-title="">
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#conferencias" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<a href="#conferencia3" class="scroll"><span class="icon-up"></span></a>
+				<h3>2º Pilar Académico:<br> Eco ingeniería, el desafío de mirar al futuro.</h3>
+				<p>Podemos y tenemos la capacidad de cambiar el funcionamiento de las cosas, es el momento de cuidar nuestro planeta, el lugar donde vivimos. Nosotros, siendo el futuro de la sociedad, comencemos a implementar la eco ingeniería usando herramientas que mejoren el porvenir de una manera amigable y sustentable, integrando la variable ambiental en el diseño y creando así un equilibrio entre el humano y el resto del planeta.</p>
+				<p>La integración de herramientas modernas de ingeniería con conceptos ecológicos y de conservación nos permite diseñar soluciones avanzadas y altamente adaptadas a las condiciones que nuestra sociedad actual y el planeta nos impone.</p>
+				<p>Disertante: Arq. Miguel Ángel Bravo:Emprendió un camino ligado a la innovación en transporte. Hoy se codea con grandes actores y trabaja para lograr un nuevo modelo de movilidad. Todo comenzó en un taller en La Paternal, de donde salieron los primeros prototipos de la Compañía Argentina de Automóviles ArqBravo, hoy, reconvertida en Bravo Motor Company LLC, con base en California.</p>
+				<p>Este arquitecto trabaja en el diseño y la ingeniería de vehículos para la movilidad sustentable, desde una perspectiva de servicio y no de producto. Autos eléctricos, estaciones de producción y recarga de energía, y hasta baterías para el almacenamiento son parte de su estrategia de negocio.</p>
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>	
+		</div>
+		<!------------Pagina Conferencia 4------- -->
+		<div data-role="page" id="conferencia4" class="evento" data-title="">
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#conferencias" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<a href="#conferencia4" class="scroll"><span class="icon-up"></span></a>
+				<h3>3º Pilar Académico: <br>Grandes potenciales poco aprovechados.</h3>
+				<p>Nuestro país es amplio en territorio y rico en recursos y personas capaces de ser buenos profesionales y ciudadanos. Ahora, siendo estudiante, un eslabón clave en la sociedad, podemos comprometernos en impulsar y promover el desarrollo de este potencial territorio; fomentando el correcto aprovechamiento de cada uno de los recursos que nos da nuestro suelo.</p>
+				<p>Disertante: Ing. Juan Cruz Fernández: Es Ingeniero Industrial egresado de la Universidad Argentina de la Empresa. Presidente del comité organizador del Congreso Argentino y Latinoamericano de Estudiantes de Ingeniería Industrail y afines Buenos Aires 2010. Fue Director de Innovación C&T. Responsable de coordinación, logística, transporte y construcción. Gerencia de eventos de AUTO SPORTS: éste es un grupo conformado po empresas con más de 30 años de exitosa trayectoria especializado en automovilismo deportivo y mundo motor, desarrolla la gestión deportiva, comercialización, televisación y producción de contenidos vinculados; todo lo referido a cuestión deportiva y técnica de las categorias TC2000, SUPER TC2000 y Fórmula Renault.</p></p>
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>	
+		</div>
+		<!------------Pagina ayudanos------- -->
+		<div data-role="page" id="ayudanos" data-title="Ayudanos" class="evento">
+			<div  data-role="panel" data-display="overlay" data-position="left" id="panel4" style="    width: 100%;">
+				<div data-role="header" class="ui-b" data-theme="b">
+				<div class="col-xs-2">
+					<a class="ui-btn-left" href="#demo-links" data-rel="close" data-icon="delete" data-role="button" data-iconpos="notext"></a>
+				</div>
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+					
+				</div>
+				<div class="clearfix"></div>
+				<div data-role="content">
+					<ul data-role="listview" style="margin:0px"> 
+						<li> <a  data-transition='flip' href="#lidera"><span class="icon-lidera"></span>¿Qué es LIDERA?</a></li>
+						<li> <a href="#ubicacion"  data-transition='flip'><span class="icon-ubicacion"></span> ¿Dónde se realiza?</a></li>
+						<li> <a href="#cronograma" data-transition='flip'><span class="icon-cronograma"></span> Cronograma</a></li>
+						<li> <a href="#xilum" data-transition='flip'   ><span class="icon-xilum"></span> XILUM</a></li>
+						<li> <a href="#talleres" data-transition='flip'   > <span class="icon-talleres"></span>Talleres</a></li>
+						<li> <a href="#conferencias" data-transition='flip'   > <span class="icon-conferencias"></span>Conferencias</a></li>
+						<li> <a href="#micro" data-transition='flip' ><span class="icon-micro"></span> Micropasantías</a></li>
+						<li> <a href="#ayudanos"  data-transition='flip' ><span class="icon-ayudanos"></span> Ayudanos a ayudar</a></li>
+						<li> <a href="#contacto"  data-transition='flip' ><span class="icon-contacto"></span> Contacto</a></li>
+					</ul>
+						
+				</div>
+			</div>
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				<div class="col-xs-2">
+					<a href="#panel4" id="butonham" data-role="button"  data-theme="b"><span class="icon-menu"></span></a>
+				</div>
+				<div class="col-xs-8 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#principal" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<h3>Ayudanos a Ayudar</h3>
+				<p>Se propone desarrollar una innovadora actividad social para poner en práctica los conocimientos aprendidos y desafiar la creatividad de cada uno de los asistentes. La misma se llevará a cabo en la mañana del día Sábado en conjunto con distintas ONG´S de nuestra Provincia, el objetivo de la misma es la de colaborar con estas organizaciones y dar a conocer sus problemáticas para así tratar de encontrar una solución.</p>
+				<div class="text-center"><img src="img/evento/ayudanos.jpg" class="img-responsive"></div>
+				
+				<div class="clearfix"></div>
+				
+				
+					
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>
+				
+		</div>
+		<!------------Pagina ayudanos------- -->
+		<div data-role="page" id="xilum" data-title="Xilum" class="evento">
+			<div  data-role="panel" data-display="overlay" data-position="left" id="panel4" style="    width: 100%;">
+				<div data-role="header" class="ui-b" data-theme="b">
+				<div class="col-xs-2">
+					<a class="ui-btn-left" href="#demo-links" data-rel="close" data-icon="delete" data-role="button" data-iconpos="notext"></a>
+				</div>
+				<div class="col-xs-10 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+					
+				</div>
+				<div class="clearfix"></div>
+				<div data-role="content">
+					<ul data-role="listview" style="margin:0px"> 
+						<li> <a  data-transition='flip' href="#lidera"><span class="icon-lidera"></span>¿Qué es LIDERA?</a></li>
+						<li> <a href="#ubicacion"  data-transition='flip'><span class="icon-ubicacion"></span> ¿Dónde se realiza?</a></li>
+						<li> <a href="#cronograma" data-transition='flip'><span class="icon-cronograma"></span> Cronograma</a></li>
+						<li> <a href="#xilum" data-transition='flip'   ><span class="icon-xilum"></span> XILUM</a></li>
+						<li> <a href="#talleres" data-transition='flip'   > <span class="icon-talleres"></span>Talleres</a></li>
+						<li> <a href="#conferencias" data-transition='flip'   > <span class="icon-conferencias"></span>Conferencias</a></li>
+						<li> <a href="#micro" data-transition='flip' ><span class="icon-micro"></span> Micropasantías</a></li>
+						<li> <a href="#ayudanos"  data-transition='flip' ><span class="icon-ayudanos"></span> Ayudanos a ayudar</a></li>
+						<li> <a href="#contacto"  data-transition='flip' ><span class="icon-contacto"></span> Contacto</a></li>
+					</ul>
+						
+				</div>
+			</div>
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;    border-top: 5px #f48912 solid;   border-bottom: 5px #f48912 solid; ">
+				<div class="col-xs-2">
+					<a href="#panel4" id="butonham" data-role="button"  data-theme="b"><span class="icon-menu"></span></a>
+				</div>
+				<div class="col-xs-8 text-center">
+					<img src="img/logo.png" style="    width: 150px;">
+				</div>
+				<div class="col-xs-2" style="padding:0px">
+						<a href="#principal" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+				</div>		
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<a href="#xilum" class="scroll"><span class="icon-up"></span></a>
+				<h3>XILUM</h3>
+				<P>Xilum es una manera didáctica y divertida de aprender conocimientos y desarrollar habilidadesdel ámbito de la gestión empresarial,ponerlos en práctica y ver el efecto que tienen en una realidad virtual.</P>
+				<p>La metodología de Xilum es la de un juego y competencia de diferentes compañías virtuales que compiten en la producción y venta de un producto novedoso en un mercado nuevo y virgen, con gran potencial, pero muy sensible a las recesiones económicas.</p>
+				<p>Al iniciar la competencia todas las empresas parten de la misma situación. Un responsable de la organización deberá analizar la información que se suministra y, por medio del uso de hojas de cálculo y gráficas, tomar las mejores decisiones. Así se continuará en las diferentes etapas del juego. Se podrán observar como las decisiones se ven reflejadas en el comportamiento de la empresa y evaluar si mantener o modificar las acciones o estrategias. Algunas de las decisiones consisten en definir: nivel de producción, precio del producto, ampliación de fábrica, capacitación de operarios, entre otras.</p>
+				<p>El objetivo de la competencia es ¡Guiar la empresa hacia el ÉXITO!</p>
+				<p>Pero todo esto no lo harás tú solo. Tendrás que trabajar en conjunto con un grupo de asistentes y lograr consolidar un Equipo. Los grupos de trabajo estarán conformados por cinco estudiantes de las distintas zonas del país y países vecinos, que estén cursando diferentes niveles de sus carreras. Esto permitirá construirrelaciones interpersonales con tus compañeros, despertar las cualidades de liderazgo, aprender a tomar decisiones y a trabajar en equipo con gente desconocida.</p>
+				<p>Cada grupo recibirá un puntaje que se obtiene a partir de una ponderación sobre la posición que tenga cada empresa respecto a diferentes índices que se calculan en base a la situación y evolución de la empresa.</p>
+				<div class="clearfix"></div>
+			</div>
+			<div data-role="footer" >
+				<p class="text-center">Lidera 2017</p>
+			</div>
+				
+		</div>
 	<!------------Pagina Contacto--------->
 	<div data-role="page" id="contacto">
 			
@@ -256,6 +744,10 @@ $("#cargando").css("display","none");
 	
 		<script>
 			$(document).ready(function(){
+				$('a.scroll').click(function(e){
+					e.preventDefault();
+					$('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
+				});
 			alto=$( window ).height();
 			centro=alto/3;
 			centro2=centro;
