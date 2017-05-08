@@ -21,10 +21,10 @@
 			appAvailability.check(
 				'com.twitter.android', // Package Name
 				function() {           // Success callback
-					navigator.startApp.start([["action", "VIEW"], ["twitter://user?screen_name=mediosprovincia"]]);
+					navigator.startApp.start([["action", "VIEW"], ["twitter://user?screen_name=lidera_"]]);
 				},
 				function() {           // Error callback
-				   window.open('https://www.twitter.com/mediosprovincia','_system','location=yes');
+				   window.open('https://twitter.com/lidera_','_system','location=yes');
 				}
 			);
 	   
@@ -33,10 +33,10 @@
 			appAvailability.check(
 				'com.facebook.katana', // Package Name
 				function() {           // Success callback
-					navigator.startApp.start([["action", "VIEW"], ["fb://facewebmodal/f?href=https://www.facebook.com/c13mediosprovincia"]]);
+					navigator.startApp.start([["action", "VIEW"], ["https://www.facebook.com/LideraAArEII"]]);
 				},
 				function() {           // Error callback
-				   window.open('https://www.facebook.com/c13mediosprovincia','_system','location=yes');
+				   window.open('https://www.facebook.com/LideraAArEII','_system','location=yes');
 				}
 			);
 	   
