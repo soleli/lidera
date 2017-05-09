@@ -68,7 +68,7 @@
 	
 	<gap:platform name="blackberry" />
 	<plugin name="cordova-plugin-appavailability" source="npm" />
-	<plugin name="cordova-plugin-startapp" source="npm" />
+	<plugin name="cordova-plugin-startapp" />
 	<gap:platform name="winphone" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" source="npm"/>
 	<plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
