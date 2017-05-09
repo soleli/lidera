@@ -24,8 +24,7 @@
 				'com.twitter.android', // Package Name
 				function() { 
 				alert("si t");          // Success callback
-					window.open('https://twitter.com/lidera_','_system','location=yes');
-					//navigator.startApp.start([["action", "VIEW"], ["twitter://user?screen_name=lidera_"]]);
+					navigator.startApp.start([["action", "VIEW"], ["twitter://user?screen_name=lidera_"]]);
 					
 				},
 				function() {
@@ -44,8 +43,8 @@
 				function() { 
 				alert("si face");
 							// Success callback
-					window.open('fb://facewebmodal/f?href=https://www.facebook.com/LideraAArEII', '_system', 'location=no');		
-					//navigator.startApp.start([["action", "VIEW"], ["fb://facewebmodal/f?href=https://www.facebook.com/LideraAArEII"]]);
+					// window.open('fb://facewebmodal/f?href=https://www.facebook.com/LideraAArEII', '_system', 'location=no');		
+					navigator.startApp.start([["action", "VIEW"], ["fb://facewebmodal/f?href=https://www.facebook.com/LideraAArEII"]]);
 				},
 				function() {    
 				alert("no fa");   				// Error callback
