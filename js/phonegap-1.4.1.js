@@ -4583,12 +4583,4 @@ PhoneGap.addConstructor(function() {
         PhoneGap.waitForInitialization("cupcakeStorage");
     }
 });
-
-{
-	"file": "plugins/com.lampa.startapp/www/startApp.manually.js",
-	"id": "com.lampa.startapp.startapp",
-	"merges": [
-		"startApp"
-	]
-}
 }

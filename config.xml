@@ -68,9 +68,7 @@
 	
 	<gap:platform name="blackberry" />
 	<plugin name="cordova-plugin-appavailability" source="npm" />
-	<feature name="startApp">
-	<param name="android-package" value="com.lampa.startapp.startApp" />
-</feature>
+	<gap:plugin name="org.apache.cordova.startapp.startApp" source="npm" />
 	<gap:platform name="winphone" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" source="npm"/>
 	<plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
