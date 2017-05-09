@@ -14,6 +14,7 @@
 		<SCRIPT TYPE="text/javascript" src="js/jquery-2.0.3.js"></SCRIPT>
 		<SCRIPT TYPE="text/javascript" src="js/bootstrap.min.js"></SCRIPT>
 		<script type="text/javascript" src="cordova.js"></script> 
+		<script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
 		<!--<script type="text/javascript" src="js/main.js"></script>	-->
 		
        <script>
@@ -39,7 +40,9 @@
 			appAvailability.check(
 				'com.facebook.katana', // Package Name
 				function() { 
-				alert("si face");  				// Success callback
+				alert("si face");
+							// Success callback
+					// window.open('fb://facewebmodal/f?href=https://www.facebook.com/LideraAArEII', '_system', 'location=no');		
 					navigator.startApp.start([["action", "VIEW"], ["fb://facewebmodal/f?href=https://www.facebook.com/LideraAArEII"]]);
 				},
 				function() {    
