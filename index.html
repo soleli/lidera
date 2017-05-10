@@ -14,7 +14,6 @@
 		<SCRIPT TYPE="text/javascript" src="js/jquery-2.0.3.js"></SCRIPT>
 		<SCRIPT TYPE="text/javascript" src="js/bootstrap.min.js"></SCRIPT>
 		<script type="text/javascript" src="cordova.js"></script> 
-		<script type="text/javascript" src="js/Launcher.js"></script>
 		<script type="text/javascript" src="js/startApp.js"></script>
 		<!--<script type="text/javascript" src="js/main.js"></script>	-->
 		
@@ -22,10 +21,9 @@
 		function twitter(){
 			appAvailability.check(
 				'com.twitter.android', // Package Name
-				function() { 
-				alert("si t");          // Success callback
-					navigator.startApp.start([["action", "VIEW"], ["twitter://user?screen_name=lidera_"]]);
-					
+				function() {
+				alert("si t");  
+				   window.open('https://twitter.com/lidera_','_system','location=yes');
 				},
 				function() {
 				alert("no tw");           // Error callback
@@ -42,9 +40,10 @@
 				'com.facebook.katana', // Package Name
 				function() { 
 				alert("si face");
-							// Success callback
-					// window.open('fb://facewebmodal/f?href=https://www.facebook.com/LideraAArEII', '_system', 'location=no');		
-					navigator.startApp.start([["action", "VIEW"], ["fb://facewebmodal/f?href=https://www.facebook.com/LideraAArEII"]]);
+					startApp.set({ /* params */
+						"action": "ACTION_VIEW",
+						"uri": "fb://facewebmodal/f?href=https://www.facebook.com/GitHub"
+					})
 				},
 				function() {    
 				alert("no fa");   				// Error callback
