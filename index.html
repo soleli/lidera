@@ -22,11 +22,11 @@
 			appAvailability.check(
 				'com.twitter.android', // Package Name
 				function() {
-				alert("si t");  
+				
 				   window.open('https://twitter.com/lidera_','_system','location=yes');
 				},
 				function() {
-				alert("no tw");           // Error callback
+				        // Error callback
 				   window.open('https://twitter.com/lidera_','_system','location=yes');
 				 
 			
@@ -39,14 +39,11 @@
 			appAvailability.check(
 				'com.facebook.katana', // Package Name
 				function() { 
-				alert("si face");
-					startApp.set({ /* params */
-						"action": "ACTION_VIEW",
-						"uri": "fb://facewebmodal/f?href=https://www.facebook.com/GitHub"
-					}).start();
+				
+					  window.open('https://www.facebook.com/LideraAArEII','_system','location=yes');
 				},
 				function() {    
-				alert("no fa");   				// Error callback
+								// Error callback
 				   window.open('https://www.facebook.com/LideraAArEII','_system','location=yes');
 				}
 			);
