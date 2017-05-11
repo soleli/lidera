@@ -19,6 +19,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
+	alert("aqui");
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -37,7 +38,7 @@ var app = {
         var push = PushNotification.init({
 		alert("aqui2");
             "android": {
-                "senderID": "542529208309"
+                "senderID": "275015233935"
             },
             "ios": {"alert": "true", "badge": "true", "sound": "true"}, 
             "windows": {} 
