@@ -22,19 +22,19 @@ var app = {
     receivedEvent: function(id) { 
       
         var pushNotification = window.plugins.pushNotification; 
-      //  if (device.platform == 'android' || device.platform == 'Android') { 
+       if (device.platform == 'android' || device.platform == 'Android') { 
             //alert("Register called"); 
             //tu Project ID aca!! 
-            pushNotification.register(this.successHandler, this.errorHandler,{"senderID":"275015233935","ecb":"app.onNotificationGCM"}); 
-       /* } 
+            pushNotification.register(this.successHandler, this.errorHandler,{"senderID":"542529208309","ecb":"app.onNotificationGCM"}); 
+        } 
         else { 
             alert("Register called"); 
             pushNotification.register(this.successHandler,this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"}); 
-        } */
+        } 
     }, 
     // result contains any message sent from the plugin call 
     successHandler: function(result) { 
-        //alert('Callback Success! Result = '+result) 
+        alert('Callback Success! Result = '+result) 
     }, 
     errorHandler:function(error) { 
         alert(error); 
@@ -46,11 +46,24 @@ var app = {
                 if ( e.regid.length > 0 ) 
                 { 
                    // console.log("Regid " + e.regid); 
-                   // alert('registration id = '+e.regid); 
-										
-                    //Cuando se registre le pasamos el regid al input 
+                   alert('registration id = '+e.regid); 
+				   id=e.regid;
+					archivoValidacion = "http://www.tiempopopular.com.ar/json/dispositivos.php?jsoncallback=?"
+					$.getJSON( archivoValidacion, {id:id})
+					.done(function(data) 
+					{ 
+						//alert(data);
+						if(data>=1){
+							alert("si");
+							}
+						else{
+							
+							alert("no");
+							
+						}
+					
+					})			
                    
-					dispo(e.regid);
                 } 
             break; 
 
