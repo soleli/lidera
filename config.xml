@@ -70,8 +70,8 @@
 	<plugin name="cordova-plugin-appavailability" source="npm" />
 
 	<gap:plugin name="com.lampa.startapp" version="0.0.6" source="npm" />
-	<plugin name="phonegap-plugin-push" source="npm">
-		<param name="SENDER_ID" value="275015233935" />
+	<plugin name="phonegap-plugin-push" spec="1.6.0">
+			<param name="SENDER_ID" value="275015233935" />
 	</plugin>
 	<gap:platform name="winphone" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" source="npm"/>

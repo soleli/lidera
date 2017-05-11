@@ -24,9 +24,8 @@ var app = {
         var push = PushNotification.init({
 		    "android": {
                 "senderID": "275015233935"
-            },
-            "ios": {"alert": "true", "badge": "true", "sound": "true"}, 
-            "windows": {} 
+            }
+           
         });
         
         push.on('registration', function(data) {	
@@ -54,6 +53,7 @@ var app = {
         });
 
         push.on('error', function(e) {
+		alert("aqui3");
             console.log("push error");
         });
     }
