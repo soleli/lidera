@@ -71,7 +71,7 @@
 
 	<gap:plugin name="com.lampa.startapp" version="0.0.6" source="npm" />
 	<gap:plugin name="phonegap-plugin-push" source="npm" />
-	<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+	
 	<gap:platform name="winphone" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" source="npm"/>
 	<plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />

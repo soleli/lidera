@@ -1,124 +1,73 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+var app = {
+    // Application Constructor
+    initialize: function() {
+        this.bindEvents();
+    },
+    // Bind Event Listeners
+    //
+    // Bind any events that are required on startup. Common events are:
+    // 'load', 'deviceready', 'offline', and 'online'.
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    // deviceready Event Handler
+    //
+    // The scope of 'this' is the event. In order to call the 'receivedEvent'
+    // function, we must explicitly call 'app.receivedEvent(...);'
+    onDeviceReady: function() {
+        var push = PushNotification.init({
+            "android": {
+                "senderID": "542529208309"
+            },
+            "ios": {"alert": "true", "badge": "true", "sound": "true"}, 
+            "windows": {} 
+        });
+        
+        push.on('registration', function(data) {
+            console.log("registration event");
+            document.getElementById("regId").innerHTML = data.registrationId;
+            console.log(JSON.stringify(data));
+        });
 
-var app = { 
-    // Application Constructor 
-    initialize: function() { 
-        this.bindEvents(); 
-    }, 
-    // Bind Event Listeners 
-    // 
-    // Bind any events that are required on startup. Common events are: 
-    // 'load', 'deviceready', 'offline', and 'online'. 
-    bindEvents: function() { 
-        document.addEventListener('deviceready', this.onDeviceReady, false); 
-    }, 
-    // deviceready Event Handler 
-    // 
-    // The scope of 'this' is the event. In order to call the 'receivedEvent' 
-    // function, we must explicity call 'app.receivedEvent(...);' 
-    onDeviceReady: function() { 
-        app.receivedEvent('deviceready'); 
-    }, 
-    // Update DOM on a Received Event 
-    receivedEvent: function(id) { 
-      
-        var pushNotification = window.plugins.pushNotification; 
-       if (device.platform == 'android' || device.platform == 'Android') { 
-            //alert("Register called"); 
-            //tu Project ID aca!! 
-            pushNotification.register(this.successHandler, this.errorHandler,{"senderID":"542529208309","ecb":"app.onNotificationGCM"}); 
-        } 
-        else { 
-            alert("Register called"); 
-            pushNotification.register(this.successHandler,this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"}); 
-        } 
-    }, 
-    // result contains any message sent from the plugin call 
-    successHandler: function(result) { 
-        alert('Callback Success! Result = '+result) 
-    }, 
-    errorHandler:function(error) { 
-        alert(error); 
-    }, 
-    onNotificationGCM: function(e) { 
-        switch( e.event ) 
-        { 
-            case 'registered': 
-                if ( e.regid.length > 0 ) 
-                { 
-                   // console.log("Regid " + e.regid); 
-                   alert('registration id = '+e.regid); 
-				   id=e.regid;
-					archivoValidacion = "http://www.tiempopopular.com.ar/json/dispositivos.php?jsoncallback=?"
-					$.getJSON( archivoValidacion, {id:id})
-					.done(function(data) 
-					{ 
-						//alert(data);
-						if(data>=1){
-							alert("si");
-							}
-						else{
-							
-							alert("no");
-							
-						}
-					
-					})			
-                   
-                } 
-            break; 
+        push.on('notification', function(data) {
+        	console.log("notification event");
+            console.log(JSON.stringify(data));
+            var cards = document.getElementById("cards");
+            var push = '<div class="row">' +
+		  		  '<div class="col s12 m6">' +
+				  '  <div class="card darken-1">' +
+				  '    <div class="card-content black-text">' +
+				  '      <span class="card-title black-text">' + data.title + '</span>' +
+				  '      <p>' + data.message + '</p>' +
+				  '    </div>' +
+				  '  </div>' +
+				  ' </div>' +
+				  '</div>';
+            cards.innerHTML += push;
+        });
 
-            case 'message': 
-              // NOTIFICACION!!! 
-              alert(e.message); 
-            break; 
-
-            case 'error': 
-              alert('GCM error = '+e.msg); 
-            break; 
-
-            default: 
-              alert('An unknown GCM event has occurred'); 
-              break; 
-        } 
-    }, 
-    onNotificationAPN: function(event) { 
-        var pushNotification = window.plugins.pushNotification; 
-        alert("Running in JS - onNotificationAPN - Received a notification! " + event.alert); 
-         
-        if (event.alert) { 
-            navigator.notification.alert(event.alert); 
-        } 
-        if (event.badge) { 
-            pushNotification.setApplicationIconBadgeNumber(this.successHandler, this.errorHandler, event.badge); 
-        } 
-        if (event.sound) { 
-            var snd = new Media(event.sound); 
-            snd.play(); 
-        } 
-    } 
+        push.on('error', function(e) {
+            console.log("push error");
+        });
+    }
 };
 
-function dispo(id){ //si ya exist o no un dispositivo con la clave
-
-archivoValidacion = "http://www.tiempopopular.com.ar/json/dispositivos.php?jsoncallback=?"
-					$.getJSON( archivoValidacion, {id:id})
-					.done(function(data) 
-					{ 
-						//alert(data);
-						if(data>=1){
-							location.href="index.html";
-							}
-						else{
-							
-							location.href="formulario.html?id="+id;
-							
-						}
-					
-					})
-					.error( function(data) { 
-						$("#cargando").html("");
-						$("#cargando").append("<p>Error al cargar </p>"); 
-						$("#cargando").append("<p>Compruebe su conexion a internet</p>"); 
-						$("#cargando").append("<button type='button' class='btn btn-success' onclick='app.initialize()'>Intertar de Nuevo</button>"); 
-					} )
-}
+app.initialize();
