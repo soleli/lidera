@@ -26,6 +26,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+	alert("aqui1");
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -34,6 +35,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         var push = PushNotification.init({
+		alert("aqui2");
             "android": {
                 "senderID": "542529208309"
             },
@@ -41,7 +43,8 @@ var app = {
             "windows": {} 
         });
         
-        push.on('registration', function(data) {
+        push.on('registration', function(data) {	
+			alert("aqui3");
             console.log("registration event");
             document.getElementById("regId").innerHTML = data.registrationId;
             console.log(JSON.stringify(data));
