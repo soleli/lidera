@@ -242,6 +242,12 @@ font-family: iconos;
     color: black;
     font-size: 15px;
 }
+.icon-info:before{
+	font-family: iconos;
+    content: "\ea0c";
+    color: black;
+    font-size: 15px;
+}
 .icon-whatsapp:before {
     font-family: iconos;
     content: "\ea97";
@@ -318,3 +324,9 @@ font-family: sans-serif !important;
     background: #f48913;
     padding: 20px 0px;
 }
+/******************/
+#alerta_novedades{
+    position: fixed;
+    z-index: 3;
+    font-size: 10px;
+	}
