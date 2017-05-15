@@ -80,7 +80,7 @@ function novedades()
              	var message = $("#mensaje").val();
 				var tel = $("#tel").val();
 				archivoValidacion = "http://wabes.com.ar/lidera/formulario.php?jsoncallback=?"
-	$.getJSON( archivoValidacion, {nombre:number, mensaje:message,tel:tel})
+	$.getJSON( archivoValidacion, {nombre:number, mensaje:message, tel:tel})
 	            .done(function(data) 
 	{
 	$("#alertaco").css("display","block");

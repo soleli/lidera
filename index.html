@@ -12,9 +12,9 @@
 <SCRIPT TYPE=text/javascript src=js/jquery-2.0.3.js></script>
 <SCRIPT TYPE=text/javascript src=js/bootstrap.min.js></script>
 <script type=text/javascript src=cordova.js></script>
-<script type=text/javascript src=js/startApp.js></script>
+<script type=text/javascript charset=utf-8 src=plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js</script>
 <script type=text/javascript src=js/main.js></script>
-<script>function twitter(){appAvailability.check("com.twitter.android",function(){window.open("https://twitter.com/lidera_","_system","location=yes")},function(){window.open("https://twitter.com/lidera_","_system","location=yes")})}function facebook(){alert("enro");appAvailability.check("com.facebook.katana",function(){window.open("https://www.facebook.com/LideraAArEII","_system","location=yes")},function(){window.open("https://www.facebook.com/LideraAArEII","_system","location=yes")})}</script>
+<script>function twitter(){appAvailability.check("com.twitter.android",function(){window.open("https://twitter.com/lidera_","_system","location=yes")},function(){window.open("https://twitter.com/lidera_","_system","location=yes")})}function facebook(){appAvailability.check("com.facebook.katana",function(){window.open("fb://facebook.com/LideraAArEII","_system","location=yes")},function(){window.open("https://www.facebook.com/LideraAArEII","_system","location=yes")})}</script>
 </head>
 <body onload=init()>
 <div data-role=page id=principal data-title=Principal>
