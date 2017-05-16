@@ -30,16 +30,17 @@
 <div class=clearfix></div>
 <div data-role=content>
 <ul data-role=listview style=margin:0px>
-<li> <a data-transition=flip href=#lidera><span class=icon-lidera></span>¿Qué es LIDERA?</a></li>
+<li> <a data-transition=flip href=#lidera><span class=icon-lidera></span> ¿Qué es LIDERA?</a></li>
 <li> <a href=#ubicacion data-transition=flip><span class=icon-ubicacion></span> ¿Dónde se realiza?</a></li>
 <li> <a href=#cronograma data-transition=flip><span class=icon-cronograma></span> Cronograma</a></li>
 <li> <a href=#xilum data-transition=flip><span class=icon-xilum></span> XILUM</a></li>
-<li> <a href=#talleres data-transition=flip> <span class=icon-talleres></span>Talleres</a></li>
-<li> <a href=#conferencias data-transition=flip> <span class=icon-conferencias></span>Conferencias</a></li>
+<li> <a href=#talleres data-transition=flip> <span class=icon-talleres></span> Talleres</a></li>
+<li> <a href=#conferencias data-transition=flip> <span class=icon-conferencias></span> Conferencias</a></li>
 <li> <a href=#micro data-transition=flip><span class=icon-micro></span> Micropasantías</a></li>
 <li> <a href=#ayudanos data-transition=flip><span class=icon-ayudanos></span> Ayudanos a ayudar</a></li>
 <li> <a href=#novedades onclick=novedades() data-transition=flip><span class=icon-info></span> Novedades</a></li>
 <li> <a href=#contacto data-transition=flip><span class=icon-contacto></span> Contacto</a></li>
+<li> <a href=#sponsors data-transition=flip><span class=icon-coffe></span> Sponsors</a></li>
 </ul>
 </div>
 </div>
@@ -70,12 +71,7 @@
 <div class=item>
 <img src=img/slider3.jpg class=img-responsive>
 </div>
-<div class=item>
-<img src=img/slider4.jpg class=img-responsive>
-</div>
-<div class=item>
-<img src=img/slider5.jpg class=img-responsive>
-</div>
+
 </div>
 <a class="left carousel-control" href=https://getbootstrap.com/examples/carousel/#myCarousel role=button data-slide=prev>
 <span class=icon-left aria-hidden=true></span>
@@ -150,7 +146,7 @@
 <div class=clearfix></div>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.9622101764403!2d-66.87095928489923!3d-29.429900882110054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbd07b73eb6f%3A0xc0bfa00dd54479c5!2sUniversidad+Nacional+de+La+Rioja!5e0!3m2!1ses!2sar!4v1493386704868" width=100% height=300 frameborder=0 style=border:0 allowfullscreen></iframe>
 <div class=clearfix></div>
-<img src=img/sponsor.png class=img-responsive>
+
 </div>
 </div>
 <div data-role=footer>
@@ -180,6 +176,7 @@
 <li> <a href=#ayudanos data-transition=flip><span class=icon-ayudanos></span> Ayudanos a ayudar</a></li>
 <li> <a href=#novedades onclick=novedades() data-transition=flip><span class=icon-info></span> Novedades</a></li>
 <li> <a href=#contacto data-transition=flip><span class=icon-contacto></span> Contacto</a></li>
+<li> <a href=#sponsors data-transition=flip><span class=icon-coffe></span> Sponsors</a></li>
 </ul>
 </div>
 </div>
@@ -191,7 +188,7 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#principal data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -226,6 +223,7 @@
 <li> <a href=#ayudanos data-transition=flip><span class=icon-ayudanos></span> Ayudanos a ayudar</a></li>
 <li> <a href=#novedades onclick=novedades() data-transition=flip><span class=icon-info></span> Novedades</a></li>
 <li> <a href=#contacto data-transition=flip><span class=icon-contacto></span> Contacto</a></li>
+<li> <a href=#sponsors data-transition=flip><span class=icon-coffe></span> Sponsors</a></li>
 </ul>
 </div>
 </div>
@@ -237,7 +235,7 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#principal data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -254,7 +252,7 @@
 <p class=text-center>Lidera 2017</p>
 </div>
 </div>
-<div data-role=page id=cronograma data-title=Cronograma>
+<div data-role=page id=cronograma class=evento data-title=Cronograma>
 <div data-role=panel data-display=overlay data-position=left id=panel2 style=width:100%>
 <div data-role=header class=ui-b data-theme=b>
 <div class=col-xs-2>
@@ -277,6 +275,7 @@
 <li> <a href=#ayudanos data-transition=flip><span class=icon-ayudanos></span> Ayudanos a ayudar</a></li>
 <li> <a href=#novedades onclick=novedades() data-transition=flip><span class=icon-info></span> Novedades</a></li>
 <li> <a href=#contacto data-transition=flip><span class=icon-contacto></span> Contacto</a></li>
+<li> <a href=#sponsors data-transition=flip><span class=icon-coffe></span> Sponsors</a></li>
 </ul>
 </div>
 </div>
@@ -288,12 +287,224 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#principal data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
-<img src=img/evento/cronograma.jpg class=img-responsive style=width:100%>
+<a href=#cronograma class=scroll><span class=icon-up></span></a>
+<h3>Cronograma</h3>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingOne">
+<h4 class="panel-title">
+<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+JUEVES 25 </a>
+</h4>
+</div>
+<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+<div class="panel-body">
+<table class="table table-condensed">
+<tbody>
+<tr>
+<td class="col-lg-2"> De 8 a 12</td>
+<td class="col-lg-10"><strong>Acreditación </strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2"> De 12 a 13</td>
+<td class="col-lg-10"> <p>Almuerzo Libre</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 13 a 14</td>
+<td class="col-lg-10"> <p>Tiempo Libre</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 14 a 15</td>
+<td class="col-lg-10"> <strong>Conferencia Profesional</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 15 a 15:30</td>
+<td class="col-lg-10"> <p>Tiempo de re-acomodación de asistentes</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 15:30 a 16:30</td>
+<td class="col-lg-5"> <strong>Actividades de integración / Talleres XILUM</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 16:30 a 17</td>
+<td class="col-lg-10"> <p>Tiempo de re-acomodación de asistentes</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 17 a 18</td>
+<td class="col-lg-5"> <strong> Talleres XILUM / Actividades de integración </strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 18 a 19</td>
+<td class="col-lg-10"> <p>Cofee Break</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 19 a 20</td>
+<td class="col-lg-5"> <strong> Acto de Apertura</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 20 a 21:30</td>
+<td class="col-lg-5"> <strong> Conferencia Magistral</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 21:30 a 23</td>
+<td class="col-lg-10"> <p>Tiempo Libre</p> </td>
+</tr><tr>
+<td class="col-lg-2">De 23 a 00:30</td>
+<td class="col-lg-10"> <p>Fiesta de Bienvenida</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="panel panel-primary">
+<div class="panel-heading" role="tab" id="headingTwo">
+<h4 class="panel-title">
+<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+VIERNES 26
+</a>
+</h4>
+</div>
+<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+<div class="panel-body">
+<table class="table table-condensed">
+<tbody>
+<tr>
+<td class="col-lg-2"> De 8 a 12</td>
+<td class="col-lg-10"><strong>Micropasantias </strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2"> De 12 a 13</td>
+<td class="col-lg-10"> <p>Almuerzo Micropasantias</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 13 a 14</td>
+<td class="col-lg-10"> <p>Tiempo Libre</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 14 a 14:30</td>
+<td class="col-lg-10"> <strong>Acto de Apertura</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 14:30 a 15</td>
+<td class="col-lg-10"> <strong>Taller de CEO</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 15 a 15:30</td>
+<td class="col-lg-10"> <p>Tiempo de re-acomodación de asistentes</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 15:30 a 16:30</td>
+<td class="col-lg-5"> <strong>1º ETAPA DE CEO</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 16:30 a 17:30</td>
+<td class="col-lg-10"> <strong>2º ETAPA DE CEO</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 17:30 a 18</td>
+<td class="col-lg-5"> <strong> 3º ETAPA DE CEO </strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 18 a 18:30</td>
+<td class="col-lg-5"> <strong> 4º ETAPA DE CEO </strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 18:30 a 19:30</td>
+<td class="col-lg-10"> <p>Cofee Break</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 19 a 20</td>
+<td class="col-lg-5"> <strong> Pesentación Semeii- CAEII</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 21:30 a 23</td>
+<td class="col-lg-10"> <p>Tiempo Libre</p> </td>
+</tr><tr>
+<td class="col-lg-2">De 23 a 00:30</td>
+<td class="col-lg-10"> <p>Fiesta </p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingThree">
+<h4 class="panel-title">
+<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+SÁBADO 27 </a>
+</h4>
+</div>
+<div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+<div class="panel-body">
+<table class="table table-condensed">
+<tbody>
+<tr>
+<td class="col-lg-2"> De 9:30 a 12</td>
+<td class="col-lg-10"><strong>Actividad Social </strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2"> De 12 a 13</td>
+<td class="col-lg-10"> <p>Almuerzo Libre</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 13 a 14</td>
+<td class="col-lg-10"> <p>Tiempo Libre</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 14 a 14:30</td>
+<td class="col-lg-10"> <strong>5º ETAPA CEO</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 14:30 a 15</td>
+<td class="col-lg-10"> <strong>6º ETAPA CEO</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 15 a 15:30</td>
+<td class="col-lg-10"> <p>Break</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 15:30 a 17</td>
+<td class="col-lg-5"> <strong> Muerte Súbita </strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 17 a 18</td>
+<td class="col-lg-10"> <p>Cofee Break</p> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 18 a 19:30</td>
+<td class="col-lg-5"> <strong> Conferencia Magistral</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 19:30 a 21:30</td>
+<td class="col-lg-10"> <strong> Acto de cierre</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 21:30 a 23</td>
+<td class="col-lg-10"> <strong> Tiempo Libre</strong> </td>
+</tr>
+<tr>
+<td class="col-lg-2">De 23 a 00:30</td>
+<td class="col-lg-10"> <p>Cena de gala</p> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+								
+</div>
+</div>
+
+
+
 <div class=clearfix></div>
+</div>
 </div>
 <div data-role=footer>
 <p class=text-center>Lidera 2017</p>
@@ -322,6 +533,7 @@
 <li> <a href=#ayudanos data-transition=flip><span class=icon-ayudanos></span> Ayudanos a ayudar</a></li>
 <li> <a href=#novedades onclick=novedades() data-transition=flip><span class=icon-info></span> Novedades</a></li>
 <li> <a href=#contacto data-transition=flip><span class=icon-contacto></span> Contacto</a></li>
+<li> <a href=#sponsors data-transition=flip><span class=icon-coffe></span> Sponsors</a></li>
 </ul>
 </div>
 </div>
@@ -333,12 +545,12 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#principal data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
 <h3>Talleres</h3>
-<img src=img/evento/talleres.jpg class=img-responsive>
+<div class=text-center><img src=img/evento/talleres.jpg class=img-responsive></div>
 <ul data-role=listview data-inset=true>
 <li><a href=#taller1>Economía amigable</a></li>
 <li><a href=#taller2>Investigación & Desarrollo y Producción </a></li>
@@ -357,7 +569,7 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#talleres data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#talleres data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;" ><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -374,7 +586,7 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#talleres data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#talleres data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -392,7 +604,7 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#talleres data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#talleres data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -411,7 +623,7 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#talleres data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#talleres data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -430,7 +642,7 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#talleres data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#talleres data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -464,6 +676,7 @@
 <li> <a href=#ayudanos data-transition=flip><span class=icon-ayudanos></span> Ayudanos a ayudar</a></li>
 <li> <a href=#novedades onclick=novedades() data-transition=flip><span class=icon-info></span> Novedades</a></li>
 <li> <a href=#contacto data-transition=flip><span class=icon-contacto></span> Contacto</a></li>
+<li> <a href=#sponsors data-transition=flip><span class=icon-coffe></span> Sponsors</a></li>
 </ul>
 </div>
 </div>
@@ -475,7 +688,7 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#principal data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -516,7 +729,7 @@
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#conferencias data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#conferencias data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -542,7 +755,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#conferencias data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#conferencias data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -564,7 +777,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#conferencias data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#conferencias data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -585,7 +798,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#conferencias data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#conferencias data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -621,6 +834,7 @@ Director Consultora ASER</p>
 <li> <a href=#ayudanos data-transition=flip><span class=icon-ayudanos></span> Ayudanos a ayudar</a></li>
 <li> <a href=#novedades onclick=novedades() data-transition=flip><span class=icon-info></span> Novedades</a></li>
 <li> <a href=#contacto data-transition=flip><span class=icon-contacto></span> Contacto</a></li>
+<li> <a href=#sponsors data-transition=flip><span class=icon-coffe></span> Sponsors</a></li>
 </ul>
 </div>
 </div>
@@ -632,7 +846,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#principal data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -668,6 +882,7 @@ Director Consultora ASER</p>
 <li> <a href=#ayudanos data-transition=flip><span class=icon-ayudanos></span> Ayudanos a ayudar</a></li>
 <li> <a href=#novedades onclick=novedades() data-transition=flip><span class=icon-info></span> Novedades</a></li>
 <li> <a href=#contacto data-transition=flip><span class=icon-contacto></span> Contacto</a></li>
+<li> <a href=#sponsors data-transition=flip><span class=icon-coffe></span> Sponsors</a></li>
 </ul>
 </div>
 </div>
@@ -679,7 +894,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#principal data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -720,6 +935,7 @@ Director Consultora ASER</p>
 <li> <a href=#ayudanos data-transition=flip><span class=icon-ayudanos></span> Ayudanos a ayudar</a></li>
 <li> <a href=#novedades onclick=novedades() data-transition=flip><span class=icon-info></span> Novedades</a></li>
 <li> <a href=#contacto data-transition=flip><span class=icon-contacto></span> Contacto</a></li>
+<li> <a href=#sponsors data-transition=flip><span class=icon-coffe></span> Sponsors</a></li>
 </ul>
 </div>
 </div>
@@ -731,7 +947,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#principal data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -759,7 +975,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#micro data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#micro data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -778,7 +994,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#micro data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#micro data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -800,7 +1016,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#micro data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#micro data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -818,7 +1034,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#micro data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#micro data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -837,7 +1053,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#micro data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#micro data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -855,7 +1071,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#micro data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#micro data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -876,7 +1092,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#micro data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#micro data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -897,7 +1113,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#micro data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#micro data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -919,7 +1135,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#principal data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -937,7 +1153,7 @@ Director Consultora ASER</p>
 <img src=img/logo.png style=width:150px>
 </div>
 <div class=col-xs-2 style=padding:0px>
-<a href=#principal data-role=button data-iconpos=notext><span class=icon-back></span></a>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
 </div>
 </div>
 <div data-role=content class=ui-fondo data-theme=fondo>
@@ -957,6 +1173,20 @@ Director Consultora ASER</p>
 <input id=btnDefaultSMS class=btn-contacto onclick=enviarcorreo() type=submit value=Enviar>
 </div>
 </div>
+</div>
+</div>
+<div data-role=page id=sponsors class=evento>
+<div data-role=header data-id=fijo data-position=fixed class=ui-b data-theme=b style="padding:5px 0 5px 0;border-top:5px #f48912 solid;border-bottom:5px #f48912 solid">
+<div class="col-xs-10 text-center">
+<img src=img/logo.png style=width:150px>
+</div>
+<div class=col-xs-2 style=padding:0px>
+<a href=#principal data-role=button data-iconpos=notext style=" float: right;   margin: 0px 20px !important;"><span class=icon-back></span></a>
+</div>
+</div>
+<div data-role=content class=ui-fondo data-theme=fondo>
+<h3> Sponsors </h3>
+<img src="img/evento/sponsorsAPP.png" class="img-responsive" />
 </div>
 </div>
 </body>

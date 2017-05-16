@@ -20,7 +20,8 @@ span {
 	    text-align: center;
     font-weight: 600;
 }
-
+.ui-panel-dismiss {
+z-index:0 !important;}
 .img-responsive {
     display: initial !important;
 	}
@@ -49,6 +50,9 @@ width: 130px;
     border-color: #ddd /*{a-bup-border}*/;
     color: #333 /*{a-bup-color}*/;
     text-shadow: none !important;
+}
+.panel-primary>.panel-heading {
+    text-shadow: none;
 }
 .img-responsive{
     display: -webkit-inline-box;}
@@ -248,6 +252,12 @@ font-family: iconos;
     color: black;
     font-size: 15px;
 }
+.icon-coffe:before{
+	font-family: iconos;
+    content: "\e9a2";
+    color: black;
+    font-size: 15px;
+}
 .icon-whatsapp:before {
     font-family: iconos;
     content: "\ea97";
@@ -315,6 +325,7 @@ color: #ed3236;
     padding: 20px;
     border: 2px solid white;
     border-radius: 20px;
+	text-align: center;
 	}
 .box-conferencia p{
 font-family: sans-serif !important;
