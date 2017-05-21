@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="www.lidera.com.ar" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Lidera 2017</name>
+<widget id="com.lidera.larioja" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Lidera La Rioja 2017</name>
     <description>
-       Aplicación de lidera de La Rioja.
+       Aplicación del evento de  lidera  La Rioja 2017.
     </description>
     <author email="clientes@wabes.com.ar" href="http://wabes.com.ar">
        Alaniz Eliana
